@@ -65,7 +65,7 @@
                   </div>
 
                   <div class="is-size-5 publication-authors">
-                    <span class="author-block">Institution Name<br>Conferance name and year</span>
+                    <span class="author-block">Ben Gurion University of the Negev<br>Conferance name and year</span>
                     <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
                   </div>
 
@@ -148,7 +148,18 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+          Recent advances in sampling-based motion plan-
+ning algorithms for high DOF arms leverage GPUs to provide
+SOTA performance. While these algorithms can be used to
+control multiple arms jointly, this approach scales poorly.
+To address this, we extend the STORM motion planning
+algorithm that uses sampling-based model-predictive-control
+(MPC) to handle multiple roboots. Our algorithm distributes
+the computation among the arms, with each computing its own
+path, while sharing this information with the other arms. We
+demonstrate the empirical advantages of this approach over
+SOTA algorithms when operating with both static and dynamic
+obstacles.
           </p>
         </div>
       </div>
