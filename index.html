@@ -292,6 +292,39 @@
 </section>
 <!--End BibTex citation -->
 
+<!--Code instructions --> 
+<section class="section" id="Installation">
+    <div class="container is-max-desktop content">
+      <h2 class="title">Installation</h2>
+      <pre><code>
+        #REQUIREMENTS: ubuntu >= 20.04, git, conda, gitlfs, isaac sim and curobo requirements (gpu with 8 gm vram (4060 or higher), 32 gb ram, etc... We developed with 4060 for the most of the time even its below min specs)
+        pick a name for your environment (%env%)
+        
+        - create a new env using: 'conda create env -b %env%'  (and then 'conda activate %env%') # make sure python >= 3.10
+        - then install isaac sim using “pip” installation instructions the isaac sim env inside the conda env https://docs.isaacsim.omniverse.nvidia.com/latest/installation/install_python.html
+         (pip is the way worked best to me and the rest of process follows, but any other isaac sim installation should work,
+          look for the instructions start with: conda create -n env_isaacsim python=3.11 # use %env%  conda activate env_isaacsim # use %env% and keep from there with their tutoial)
+
+        - clone our repo: Git clone https://github.com/Dan7171/rl_for_curobo.git
+        - cd rl_for_curobo/curobo # currently rl_for_curobo is a legacy name for our mpc-multi arm project (sorry for the inconvenience, this will be changed soon to "mpc-multi-arm" or similar in following versions)
+        - install curobo in your conda env: 
+         - pip install -e . --no-build-isolation
+         # more instructions and examples here: https://curobo.org/get_started/1_install_instructions.html  
+         # note that you don't need to clone the repository like they require, because we already have it in our repository (don't do that: git clone https://github.com/NVlabs/curobo.git)
+      
+        - cd .. # back to rl_for_curobo
+        pip install . # install rl_for_curobo module in yourconda env
+        
+        - git lfs install # if not yet done
+        - git lfs pull # very important so that all big files like robots meshes will be pulled properly 
+        - run hello world example # todo
+        
+        
+    
+      </code></pre>
+    </div>
+</section>
+
 
   <footer class="footer">
   <div class="container">
