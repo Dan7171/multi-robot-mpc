@@ -309,6 +309,7 @@
         - cd rl_for_curobo/curobo # currently rl_for_curobo is a legacy name for our mpc-multi arm project (sorry for the inconvenience, this will be changed soon to "mpc-multi-arm" or similar in following versions)
         - install curobo in your conda env: 
          - pip install -e . --no-build-isolation
+          - if fails, try: SETUPTOOLS_SCM_PRETEND_VERSION_FOR_NVIDIA_CUROBO=0.0.0+local pip install -e . --no-build-isolation  
          # more instructions and examples here: https://curobo.org/get_started/1_install_instructions.html  
          # note that you don't need to clone the repository like they require, because we already have it in our repository (don't do that: git clone https://github.com/NVlabs/curobo.git)
       
