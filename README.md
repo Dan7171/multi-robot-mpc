@@ -1,11 +1,11 @@
 # This is a repo for hosting the website of Our work on Multi-Robot Model-Predictive-Control
 # Link: https://dan7171.github.io/multi-robot-mpc/ 
+__________________________________________________
 
 
 
-
-# ORIGINAL TEMPLATE CREDIT
-# Academic Project Page Template
+### ORIGINAL TEMPLATE CREDIT BELOW
+#### Academic Project Page Template
 This is an academic paper project page template.
 
 
